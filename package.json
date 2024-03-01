@@ -11,8 +11,8 @@
     "dotenv": "^16.4.5"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js --cucumberOpts.tags",
-    "gen-allure": ".\\node_modules\\.bin\\allure generate allure-results/ --clean",
-    "open-allure": ".\\node_modules\\.bin\\allure open"
+    "task11": "wdio run ./wdio.conf.js --cucumberOpts.tags",
+    "generate": ".\\node_modules\\.bin\\allure generate allure-results/ --clean",
+    "view": ".\\node_modules\\.bin\\allure open"
   }
 }
