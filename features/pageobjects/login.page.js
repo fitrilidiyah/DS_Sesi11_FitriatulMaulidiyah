@@ -6,7 +6,7 @@ const element = {
   fieldPassword: $("#password"),
   buttonLogin: $("#login-button"),
   errorLockedOutUser: (message) => $(`//h3[text()="${message}"]`),
-  errorEmptyUsername: (warning) => $(`//h3[text()="${warning}"]`),
+  errorInvalidUsername: (warning) => $(`//h3[text()="${warning}"]`),
 };
 
 class LoginPage extends Page {
@@ -24,11 +24,11 @@ class LoginPage extends Page {
     await expect(element.errorLockedOutUser(message)).toBeDisplayed();
   }
 
-  async validateEmptyUsername(warning) {
-    await element.errorEmptyUsername(warning).waitForDisplayed({
+  async validateInvalidUsername(warning) {
+    await element.errorInvalidUsername(warning).waitForDisplayed({
       timeout: 2500,
     });
-    await expect(element.errorEmptyUsername(warning)).toBeDisplayed();
+    await expect(element.errorInvalidUsername(warning)).toBeDisplayed();
   }
 
   open() {

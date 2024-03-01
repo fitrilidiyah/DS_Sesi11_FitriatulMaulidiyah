@@ -41,5 +41,5 @@ Then(
 );
 
 Then(/^Fitria should get error "(.*)"$/, async (warning) => {
-  await LoginPage.validateEmptyUsername(warning);
+  await LoginPage.validateInvalidUsername(warning);
 });
