@@ -1,12 +1,14 @@
 # DS_Sesi11_FitriatulMaulidiyah
 WebDriverIO integrated with Allure report 
 
-**Overview:** this automation run on Chrome & Mozilla Firefox with simply **type command** `npm run task11` in Terminal then click Enter 
+### Overview: 
+This automation run on Chrome & Mozilla Firefox with simply **type command** `npm run task11` in Terminal then click Enter 
 
-**Allure Report**
+### Allure Report
 
 - Run command `npm run generate` to generate the report 
 - Run command `npm run view` to open & view the generated report
+
 
 
 Notes: the Scripts like **_task11, generate, view_** can be changed on file package.json 
